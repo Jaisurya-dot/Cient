@@ -1,0 +1,16 @@
+ /* Feature.css */
+/* Smooth animations */
+[data-aos] {
+  transition-property: transform, opacity;
+  will-change: transform, opacity;
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  [data-aos] {
+    transition-delay: 0 !important;
+  }
+  .feature-box {
+    min-height: auto !important;
+  }
+}
